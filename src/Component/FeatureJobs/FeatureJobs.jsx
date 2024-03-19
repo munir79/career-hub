@@ -16,7 +16,7 @@ const FeatureJobs = () => {
            <p className="text-center">Explore Thousands of Job Oppurtunities with all Information you need.Its Your Future</p>
            </div>
 
-           <div>
+           <div className="grid grid-cols-2 gap-6 m-4">
           {
             jobs.map(job=><JobDetails key={job.id} job={job} ></JobDetails>)
           }
