@@ -21,7 +21,7 @@ const Header = () => {
        {Links}
       </ul>
     </div>
-    <a className="btn btn-ghost text-xl">daisyUI</a>
+    <a className="btn btn-ghost text-xl">Career Hub</a>
   </div>
 
   
@@ -31,7 +31,7 @@ const Header = () => {
     </ul>
   </div>
   <div className="navbar-end">
-    <a className="btn">Button</a>
+    <a className="btn  btn-primary">Applied</a>
   </div>
 </div>
     );
