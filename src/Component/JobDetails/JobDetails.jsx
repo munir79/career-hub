@@ -1,8 +1,11 @@
 import PropTypes from 'prop-types'; 
 
 import { MdLocationOn } from "react-icons/md";
+import { AiOutlineDollar } from "react-icons/ai";
+
 
 const JobDetails = ({job}) => {
+    
    
     const { logo,job_title,company_name,remote_or_onsite,location,job_type,salary,job_description}=job;
     console.log(job);
@@ -17,9 +20,10 @@ const JobDetails = ({job}) => {
         <button className='px-5 py-2 font-extrabold border rounded text-[#7E90FE] border-black m-2 mr-4'>{remote_or_onsite} </button>
         <button className='px-5 py-2 font-extrabold border rounded border-black m-2 mr-4'>{job_type} </button>
     </div>
-    <div className='flex m-3'>
-        <h2 className=' text-2xl'><MdLocationOn></MdLocationOn>  </h2>
-        <h2 className='text-2xl'>{location}</h2>
+    <div className='flex m-3 '>
+        <h2 className='flex text-xl mr-4'><MdLocationOn></MdLocationOn> {location} </h2>
+        <h2 className='flex mt-1'><AiOutlineDollar className='text-2xl'></AiOutlineDollar> {salary} </h2>
+   
     </div>
     <div className="card-actions ">
       <button className="btn btn-primary">View Details </button>
